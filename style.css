@@ -1,0 +1,147 @@
+
+/*
+.position_sticky{     
+    position:sticky;
+    top: 0px;
+}
+*/
+* {/*Selector Universal, todas las etiquetas se afectan */
+    margin:0;
+    padding:0;
+
+}
+img {
+    padding: 20px;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+/************************************************ HEADER *********************************************/
+header{
+    background-color: #eceede;   
+    box-shadow: 0px 10px 25px #eceede;
+}
+
+div{
+    width : 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0 auto; 
+    padding :0px 0    
+}
+
+
+div nav ul{
+    list-style-type: none;
+}
+
+div nav ul li{
+    display: inline-block;
+    margin: 0 0;
+    
+}
+
+
+div nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight : bold;
+    padding: 10px 10px;
+    background-color: #044c9c;
+    color:cornsilk;
+    border-radius: 10px;
+    
+}
+
+
+/************************************************ BODY *********************************************/
+
+
+section{
+    width : 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0 auto; 
+    padding :0px 0    
+}
+
+section  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: flex-start;
+
+
+}
+
+section  ul li{
+    display: inline-block;    
+    margin: 30px 10px;
+    
+}
+
+
+section  ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight : bold;
+    padding: 10px 10px;
+    
+    color:cornsilk;
+    border-radius: 10px;
+    
+}
+
+/************************************************ FOOTER *********************************************/
+footer{
+    background-color: #eceede;  
+    box-shadow: 0px 10px 25px #b4cb08;
+}
+
+
+div2{
+    width : 80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 0 auto; 
+    padding :0px 0
+}
+
+
+div2 nav ul{
+    list-style-type: none;
+    
+}
+
+div2 nav ul li{
+    display: inline-block;
+    margin: 0 0;
+    
+}
+
+
+div2 nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight : bold;
+    padding: 10px 10px;
+    /*background-color: #044c9c;*/
+    color:cornsilk;
+    border-radius: 50px;
+    
+}
+
+.sectionposition{   
+    position:relative;
+}
+.position_sticky{ 
+    
+    position:sticky;
+    top: 0px;
+}
