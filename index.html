@@ -5,75 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf" rel="stylesheet"> 
     <title>Mode Super</title>
 </head>
 <body>
-    <header class ="sectionposition position_sticky">        
-        <div class =" sectionposition position_sticky">           
+    <header class ="sectionposition positionSticky">        
+        <div class ="headerContainer  sectionposition positionSticky">           
             <a href="./index.html"><img class ="logo position_relative " src="./assets/images/logo.png" alt="logotipo" width="150px"></a>
-            <nav>
-                <ul>
-                    <li ><a  href="./index.html">Home</a></li>
-                    <li><a  href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a  href="./pages/sucursales.html">Sucursales</a></li>
-                    <li><a  href="./pages/marcas.html">Marcas</a></li>
-                    <li><a  href="./pages/produccion.html">Produccion</a></li>
-                    <li><a  href="./pages/serviciodomicilio.html">Servicio a Domicilio</a></li>
-                    <li><a  href="./pages/contacto.html">Contacto</a></li>
+            <nav >
+                <ul class ="menuNav">
+                    <li class="liHome"><a class="active" href="./index.html">Home</a></li>
+                    <li class="liNosotros"><a  href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="liSucursales"><a  href="./pages/sucursales.html">Sucursales</a></li>
+                    <li class="liMarcas"><a  href="./pages/marcas.html">Marcas</a></li>
+                    <li class="liProduccion"><a  href="./pages/produccion.html">Produccion</a></li>
+                    <li class="liServDom"><a  href="./pages/serviciodomicilio.html">Servicio a Domicilio</a></li>
+                    <li class="liContacto" ><a  href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>                
+        <h1>Mode super</h1>
         <section>
             <ul>
                 <li>
-                    <h2>Nosotros</h2>
-                    <a href="./pages/nosotros.html">
-                        <img src="https://picsum.photos/200/150"" alt="logotipo">
-                    </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
-                    
+                    <div>
+                        <h2>Nosotros</h2>
+                        <a href="./pages/nosotros.html">
+                            <img src="https://picsum.photos/200/150"" alt="logotipo">
+                        </a>
+                        <p class="HomeNosotros">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    </div>    
                 </li>
-                <li>                
+                <li>     
+                    <div>
                     <h2>Sucursales</h2>
                     <a href="./pages/sucursales.html">
                         <img src="https://picsum.photos/200/150"" alt="logotipo">
-                    </a> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    </a> <p class="HomeSucursales" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                </div>           
                 </li>
                 <li>
-                    <h2>Marcas</h2>
-                    <a href="./pages/marcas.html">
-                        <img src="https://picsum.photos/200/150"" alt="logotipo">
-                    </a>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    <div>
+                        <h2>Marcas</h2>
+                        <a href="./pages/marcas.html">
+                            <img src="https://picsum.photos/200/150"" alt="logotipo">
+                        </a>                    
+                        <p class="HomeMarcas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    </div>
                 </li>
                 <li>
-                    <h2>Produccion</h2>
-                    <a href="./pages/produccion.html">
-                        <img src="https://picsum.photos/200/150"" alt="logotipo">
-                    </a>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    <div>
+                        <h2>Produccion</h2>
+                        <a href="./pages/produccion.html">
+                            <img src="https://picsum.photos/200/150"" alt="logotipo">
+                        </a>                    
+                        <p class="HomeProduccion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                        </div>
                 </li>
-                <li>                    
-                    <h2>Servicio a Domicilio</h2>
-                    <a href="./pages/serviciodomicilio.html">
-                        <img src="https://picsum.photos/200/150"" alt="logotipo">
-                    </a>                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                <li>      
+                    <div>
+                        <h2>Servicio a Domicilio</h2>
+                        <a href="./pages/serviciodomicilio.html">
+                            <img src="https://picsum.photos/200/150"" alt="logotipo">
+                        </a>                    
+                        <p class="HomeServDom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    </div>              
                 </li>
-                <li>                    
-                    <h2>Contacto</h2>
-                    <a href="./pages/contacto.html">
-                        <img src="https://picsum.photos/200/150"" alt="logotipo">
-                    </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                <li>          
+                    <div>
+                        <h2>Contacto</h2>
+                        <a href="./pages/contacto.html">
+                            <img src="https://picsum.photos/200/150"" alt="logotipo">
+                        </a>
+                        <p class="HomeContacto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    </div>          
                 </li>
             </ul>
         </section>        
     </main>
     <footer >
-        <div2>     
+        <div class ="div2">     
             <nav>
                 <ul>
                     <li>copyright curso coderhouse 2022</li>
@@ -82,7 +95,7 @@
                     <li> <a href="./pages/diseno.html"><img src="./assets/images/balsamiq.png" alt="diseño" width="40px"></a></li>
                 </ul>
             </nav>
-        </div2>
+        </div>
     </footer>
 
 </body>

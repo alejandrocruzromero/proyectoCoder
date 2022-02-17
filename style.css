@@ -7,11 +7,12 @@
 */
 * {/*Selector Universal, todas las etiquetas se afectan */
     margin:0;
-    padding:0;
-
+    padding:0;    
+    box-sizing:border-box; /*Para no tener que andar restando bordes y paddings de las medidas*/
+    
 }
 img {
-    padding: 20px;
+    /* padding: 20px; */
 }
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
@@ -22,18 +23,45 @@ header{
     box-shadow: 0px 10px 25px #eceede;
 }
 
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 div{
     width : 80%;
-    display:flex;
+    
     justify-content: center;
     align-items: center;    
     margin: 0 auto; 
-    padding :0px 0    
+    padding :0px 0 ;
+    flex-direction:column;
+}
+
+.menuNav{
+    display:grid;
+    
+     grid-template-areas: 
+    "Home Nosotros Sucursales Marcas Produccion ServDom Contacto"; 
+
+    /* grid-template-columns: repeat(4,1fr) */ 
+
+     /* grid-template-areas: 
+    "titulo titulo live1 live2"
+    "titulo titulo live3 live4"
+     ; */
 }
 
 
 div nav ul{
+    font-family: 'Open Sans', sans-serif;
     list-style-type: none;
+    background-color: #044c9c;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 div nav ul li{
@@ -47,7 +75,7 @@ div nav ul li a{
     text-decoration: none;
     font-size: 18px;
     font-weight : bold;
-    padding: 10px 10px;
+    padding: 14px 16px;
     background-color: #044c9c;
     color:cornsilk;
     border-radius: 10px;
@@ -55,8 +83,47 @@ div nav ul li a{
 }
 
 
+
+div nav ul li a:hover{
+    
+    background-color: #eceede; 
+    color: #044c9c; 
+}
+
+.active {
+    background-color: #eceede;
+    color: #044c9c;
+  }
+
+
+  .liHome{
+    grid-area: Home;
+  }
+  .liNosotros{
+    grid-area: Nosotros;
+  }
+  .liSucursales{
+    grid-area: Sucursales;
+  }
+  .liMarcas{
+    grid-area: Marcas;
+  }
+  .liProduccion{
+    grid-area: Produccion;
+  }
+  .liServDom{
+    grid-area: ServDom;
+  }
+  .liContacto{
+    grid-area: Contacto;
+  }
 /************************************************ BODY *********************************************/
 
+h1{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
 
 section{
     width : 60%;
@@ -104,7 +171,7 @@ footer{
 }
 
 
-div2{
+.div2{
     width : 80%;
     display:flex;
     justify-content: center;
@@ -114,34 +181,96 @@ div2{
 }
 
 
-div2 nav ul{
+.div2 nav ul{
     list-style-type: none;
-    
+    background-color: #eceede; 
 }
 
-div2 nav ul li{
+.div2 nav ul li{
     display: inline-block;
     margin: 0 0;
     
 }
 
 
-div2 nav ul li a{
+.div2 nav ul li a{
     text-decoration: none;
     font-size: 18px;
     font-weight : bold;
-    padding: 10px 10px;
-    /*background-color: #044c9c;*/
+    padding: 0px 0px;
+    background-color: #eceede;
     color:cornsilk;
     border-radius: 50px;
     
 }
 
-.sectionposition{   
+
+.div2 nav ul li a img{
+    position:relative;
+    top:20px;
+
+    
+}
+
+.sectionPosition{   
     position:relative;
 }
-.position_sticky{ 
+.positionSticky{ 
     
     position:sticky;
     top: 0px;
+}
+
+
+
+
+
+@media  (max-width: 768px){
+
+    
+    .positionSticky{     
+        position:inherit;
+        top: 0px;
+    }
+
+
+    .menuNav{                                
+        grid-template-areas: 
+        "Home"
+        "Nosotros" 
+        "Sucursales" 
+        "Marcas" 
+        "Produccion" 
+        "ServDom" 
+        "Contacto";             
+
+        /* max-width: 1200px; */
+    /* margin:0 auto; */
+    /* display:grid; */
+    /* grid-template-columns: repeat(4,1fr); */
+    gap:20px;
+    margin-top:80px;
+    }
+    
+    .HomeNosotros{
+        display: none;
+    }
+    .HomeSucursales{
+        display: none;
+    }
+    .HomeMarcas{
+        display: none;
+    }
+    .HomeProduccion{
+        display: none;
+    }
+    .HomeServDom{
+        display: none;
+    }
+    .HomeContacto{
+        display: none;
+    }
+    
+
+                                                                /*Aquí las CSS para tablet y móvil verticales y móvil horizontal*/
 }
