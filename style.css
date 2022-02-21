@@ -11,11 +11,9 @@
     box-sizing:border-box; /*Para no tener que andar restando bordes y paddings de las medidas*/
     
 }
-img {
-    /* padding: 20px; */
-}
+
 body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    font-family: 'Open Sans', sans-serif;
 }
 /************************************************ HEADER *********************************************/
 header{
@@ -43,22 +41,16 @@ div{
 .menuNav{
     display:grid;
     
-     grid-template-areas: 
-    "Home Nosotros Sucursales Marcas Produccion ServDom Contacto"; 
-
-    /* grid-template-columns: repeat(4,1fr) */ 
-
-     /* grid-template-areas: 
-    "titulo titulo live1 live2"
-    "titulo titulo live3 live4"
-     ; */
+    grid-template-areas: 
+    "Logo Home Nosotros Sucursales Marcas Produccion ServDom Contacto"; 
+    
 }
 
 
 div nav ul{
     font-family: 'Open Sans', sans-serif;
     list-style-type: none;
-    background-color: #044c9c;    
+    /* background-color: #044c9c;     */
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -78,7 +70,7 @@ div nav ul li a{
     padding: 14px 16px;
     background-color: #044c9c;
     color:cornsilk;
-    border-radius: 10px;
+    border-radius: 1px;
     
 }
 
@@ -95,28 +87,44 @@ div nav ul li a:hover{
     color: #044c9c;
   }
 
-
+  .liLogo{
+    position:absolute;
+    grid-area: Logo;
+  }
   .liHome{
+    align-self: center;
     grid-area: Home;
   }
   .liNosotros{
+    align-self: center;
     grid-area: Nosotros;
   }
   .liSucursales{
+    align-self: center;
     grid-area: Sucursales;
   }
   .liMarcas{
+    align-self: center;
     grid-area: Marcas;
   }
   .liProduccion{
+    align-self: center;
     grid-area: Produccion;
   }
   .liServDom{
+    align-self: center;
     grid-area: ServDom;
   }
   .liContacto{
+    align-self: center;
     grid-area: Contacto;
   }
+
+
+
+  header span{
+    display:none;
+}
 /************************************************ BODY *********************************************/
 
 h1{
@@ -164,6 +172,133 @@ section  ul li a{
     
 }
 
+.parrafo{
+    text-align: justify;
+}
+
+.imagen{
+    border-radius: 8px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.subtitulos{
+    text-align: center;
+}
+
+
+.gridSucursales{
+    display:grid;    
+    grid-template-areas: 
+    "Sucursal1 Parrafo1"
+    "Sucursal2 Parrafo2"
+    "Sucursal3 Parrafo3"
+    "Sucursal4 Parrafo4" ;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 20px;
+    
+}
+.liSucursal1{    
+    grid-area: Sucursal1;    
+
+}
+.liSucursal2{
+    grid-area: Sucursal2;    
+}
+.liSucursal3{
+    grid-area: Sucursal3;    
+}
+.liSucursal4{
+    grid-area: Sucursal4;    
+}
+.pSucursal1{
+    grid-area: Parrafo1;    
+}
+.pSucursal2{
+    grid-area: Parrafo2;
+}
+.pSucursal3{
+    grid-area: Parrafo3;
+}
+.pSucursal4{
+    grid-area: Parrafo4;
+}
+
+
+.gridImagenes{
+    display:grid;    
+    grid-template-areas: 
+    "txt txt txt txt"
+    "imgA imgB imgC imgD"
+    "imgE imgF imgG imgH"
+    "imgI imgJ imgK imgL";
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 20px;
+    
+
+}
+
+
+
+.gridProduccion{
+    display:grid;    
+    grid-template-areas: 
+    "Bloque1 Bloque1 Bloque1"
+    "Bloque2 Bloque3 Bloque4";
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 20px;
+}
+.gridProduccionBloque1{
+    grid-area: Bloque1;  
+}
+.gridProduccionBloque2{
+    grid-area: Bloque2;  
+}
+.gridProduccionBloque3{
+    grid-area: Bloque3;  
+}
+.gridProduccionBloque4{
+    grid-area: "Bloque4";  
+}
+
+
+.gridServDom{
+    display:grid;    
+    grid-template-areas: 
+    "BloqueSD1 BloqueSD1"
+    "BloqueSD2 BloqueSD3"
+    "BloqueSD4 BloqueSD5";
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 20px;
+}
+
+.gridServDomBloque1{
+    grid-area: BloqueSD1;
+}
+.gridServDomBloque2{
+    grid-area: BloqueSD2;
+}
+.gridServDomBloque3{
+    grid-area: BloqueSD3;
+}
+.gridServDomBloque4{
+    grid-area: BloqueSD4;
+}
+.gridServDomBloque5{
+    grid-area: BloqueSD5;
+}
+
+
 /************************************************ FOOTER *********************************************/
 footer{
     background-color: #eceede;  
@@ -173,7 +308,7 @@ footer{
 
 .div2{
     width : 80%;
-    display:flex;
+ 
     justify-content: center;
     align-items: center;    
     margin: 0 auto; 
@@ -212,6 +347,32 @@ footer{
     
 }
 
+
+.footerNav{
+    display:grid;
+    grid-template-areas: 
+    "face insta bals"
+    "copyr copyr copyr";
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 20px;
+}
+
+.liFace{
+    grid-area: face;
+}
+
+.liInsta{
+    grid-area: insta;
+}
+.liBals{
+    grid-area: blas;
+}
+
+.liCopy{
+    grid-area: copyr;
+}
+
 .sectionPosition{   
     position:relative;
 }
@@ -234,8 +395,13 @@ footer{
     }
 
 
+    header nav  {
+        display:none;
+    }
+    
     .menuNav{                                
         grid-template-areas: 
+        "Logo"
         "Home"
         "Nosotros" 
         "Sucursales" 
@@ -252,6 +418,9 @@ footer{
     margin-top:80px;
     }
     
+    /* .footerNav .liCopy{
+        display: none;
+    }      */
     .HomeNosotros{
         display: none;
     }
@@ -271,6 +440,43 @@ footer{
         display: none;
     }
     
+    header span{
+        display:inline-block;
+    }
+    
+    .gridImagenes{
+        display:grid;    
+        grid-template-areas:         
+        "imgA imgB"
+        "imgC imgD"
+        "imgE imgF"
+        "imgG imgH"
+        "imgI imgJ"
+        "imgK imgL";
+        justify-content: space-evenly;
+        justify-items: center;
+        gap: 20px;
+        
+    
+    }           
+    .gridProduccion{
+        grid-template-areas: 
+        "Bloque1"
+        "Bloque2"
+        "Bloque3"
+        "Bloque4";
+    }
 
-                                                                /*Aquí las CSS para tablet y móvil verticales y móvil horizontal*/
+    .gridServDom{
+        
+        grid-template-areas: 
+        "BloqueSD1"
+        "BloqueSD2"
+        "BloqueSD3"
+        "BloqueSD4"
+        "BloqueSD5";
+        
+    }
+    
+/*Aquí las CSS para tablet y móvil verticales y móvil horizontal*/
 }

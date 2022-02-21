@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link href="../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf" rel="stylesheet"> 
     <title>Mode Super</title>
 </head>
 <body>
     <header class ="sectionposition positionSticky">        
-        <div class ="headerContainer  sectionposition positionSticky">           
-            <a href="./index.html"><img class ="logo position_relative " src="../assets/images/logo.png" alt="logotipo" width="150px"></a>
+        <div class ="headerContainer  sectionposition positionSticky">                       
             <nav >
                 <ul class ="menuNav">
+                    <li class="liLogo"></li><a href="../index.html"><img src="../assets/images/logo.png" alt="logotipo" width="150px"></a>
                     <li class="liHome"><a  href="../index.html">Home</a></li>
                     <li class="liNosotros"><a  href="../pages/nosotros.html">Nosotros</a></li>
                     <li class="liSucursales"><a class="active" href="../pages/sucursales.html">Sucursales</a></li>
@@ -22,30 +23,41 @@
                     <li class="liContacto" ><a  href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <span><a href="./index.html"><img  src="../assets/images/logo.png" alt="logotipo" width="150px"></a></span>
+            <span>🍔</span>
         </div>
     </header>
-    <main>        
+    <main>     
+        <h1 class="titulo" >Mode Super - Sucursales</h1>   
         <section>
-            <ul>
+            <ul   class ="gridSucursales">
                 <li>
-                    <h2>Sucursal 1</h2>
-                    <img src="https://picsum.photos/200/150"" alt="sucursal1">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    <div >
+                        <h2  class ="subtitulos">Sucursal 1</h2>
+                        <img class ="liSucursal1" src="https://picsum.photos/200/150"" alt="sucursal1">
+                        <p   class ="pSucursal1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    </div>
                 </li>    
                 <li>
-                    <h2>Sucursal 2</h2>
-                    <img src="https://picsum.photos/200/150"" alt="sucursal2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>              
+                    <div>
+                        <h2  class ="subtitulos">Sucursal 2</h2>
+                        <img class ="liSucursal2" src="https://picsum.photos/200/150"" alt="sucursal2">
+                        <p   class ="pSucursal2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>              
+                    </div>
                 </li>
                 <li>
-                    <h2>Sucursal 3</h2>
-                    <img src="https://picsum.photos/200/150"" alt="sucursal3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>                
+                    <div>
+                        <h2  class ="subtitulos">Sucursal 3</h2>
+                        <img class ="liSucursal3" src="https://picsum.photos/200/150"" alt="sucursal3">
+                        <p   class ="pSucursal3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>                
+                    </div>
                 </li>
                 <li>
-                    <h2>Sucursal 4</h2>
-                    <img src="https://picsum.photos/200/150"" alt="sucursal4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    <div>
+                        <h2  class ="subtitulos">Sucursal 4</h2>
+                        <img class ="liSucursal4"src="https://picsum.photos/200/150"" alt="sucursal4">
+                        <p   class ="pSucursal4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id cupiditate amet culpa libero quo, molestias sint reiciendis. Doloremque commodi laboriosam neque dolores, reiciendis fuga officiis ipsum architecto saepe ratione molestiae.</p>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -53,15 +65,16 @@
     <footer >
         <div class ="div2">     
             <nav>
-                <ul>
-                    <li>copyright curso coderhouse 2022</li>
-                    <li> <a href="https://www.facebook.com/modesuper/" target='_blank' rel='noopener noreferrer'><img src="../assets/images/Facebook.png" alt="facebook" width="40px"></a></li>
-                    <li> <a href="https://www.instagram.com/modesuper_/" target='_blank' rel='noopener noreferrer'><img src="../assets/images/instagram.png" alt="instagram" width="40px"></a></li>
-                    <li> <a href="../pages/diseno.html"><img src="../assets/images/balsamiq.png" alt="diseño" width="40px"></a></li>
+                <ul class ="footerNav">
+                    <li class="liCopy" >copyright curso coderhouse 2022</li>
+                    <li class="liFace"> <a href="https://www.facebook.com/modesuper/" target='_blank' rel='noopener noreferrer'><img src="../assets/images/Facebook.png" alt="facebook" width="40px"></a></li>
+                    <li class="liInsta"> <a href="https://www.instagram.com/modesuper_/" target='_blank' rel='noopener noreferrer'><img src="../assets/images/instagram.png" alt="instagram" width="40px"></a></li>
+                    <li class="liBalsa"> <a href="../pages/diseno.html"><img src="../assets/images/balsamiq.png" alt="diseño" width="40px"></a></li>
                 </ul>
             </nav>
         </div>
     </footer>
+
 
 </body>
 </html>
