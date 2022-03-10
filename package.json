@@ -1,0 +1,19 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "alecruz": "sass style.scss css/style.min.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandrocruzromero/proyectoCoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandrocruzromero/proyectoCoder/issues"
+  },
+  "homepage": "https://github.com/alejandrocruzromero/proyectoCoder#readme"
+}
