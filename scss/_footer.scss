@@ -1,0 +1,143 @@
+footer {
+	background-color: $ColorModeVerde ;
+	box-shadow: 0px 10px 25px #b4cb08;
+}
+.div2 {
+	width: $porcentaje * 8;;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	@include paddingDoble(0px, 0px);
+	nav {
+		ul {
+			list-style-type: none;
+			background-color: $ColorModeVerde ;
+			position: relative;
+			top: $porcentaje * 5;
+			left: $porcentaje * 5;
+			transform: translate($porcentaje * -5, $porcentaje * 0);
+			justify-content: center;
+			li {
+				display: inline-block;
+				margin: 0 0;
+				list-style: none;
+				a {
+					text-decoration: none;
+					font-size: $TextoTamanoA;
+					@include paddingDoble(0px, 0px);
+					background-color: $ColorModeVerde ;
+					color: cornsilk;
+					border-radius: 50px;
+					width: 80px;
+					height: 80px;
+					background-color: #fff;
+					text-align: center;
+					line-height: 80px;
+					font-size: $TextoTamanoB;
+					margin: 0 10px;
+					display: block;
+					border-radius: $porcentaje * 5;
+					position: relative;
+					overflow: hidden;
+					border: 3px solid #fff;
+					z-index: 1;
+					.icon {
+						position: relative;
+						color: #262626;
+						transition: .5s;
+						z-index: 3;
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						top: $porcentaje * 10;
+						left: 0;
+						width: $porcentaje * 10;
+						height: $porcentaje * 10;
+						background: #f00;
+						transition: .5s;
+						z-index: 2;
+					}
+					&:hover {
+						&:before {
+							top: 0;
+						}
+					}
+					img {
+						position: relative;
+						top: 10px;
+					}
+				}
+				&:nth-child(1) {
+					a {
+						&:before {
+							background: $ColorFacebook;
+						}
+					}
+				}
+				&:nth-child(2) {
+					a {
+						&:before {
+							background: $ColorTwitter;
+						}
+					}
+				}
+				&:nth-child(3) {
+					a {
+						&:before {
+							background: $ColorFacebook;
+						}
+					}
+				}
+				&:nth-child(4) {
+					a {
+						&:before {
+							background: $ColorBalsamiq;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ul {
+	li {
+		a {
+			&:hover {
+				.icon {
+					color: #fff;
+					transform: rotateY(360deg);
+				}
+			}
+		}
+	}
+}
+.footerNav {
+	display: grid;
+	grid-template-areas: "face insta bals"
+    "copyr copyr copyr";
+	justify-content: space-evenly;
+	justify-items: center;
+	gap: 20px;
+}
+.liFace {
+	grid-area: face;
+}
+.liInsta {
+	grid-area: insta;
+}
+.liBals {
+	grid-area: blas;
+}
+.liCopy {
+	grid-area: copyr;
+}
+.sectionPosition {
+	position: relative;
+}
+.positionSticky {
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+}
+

@@ -1,0 +1,387 @@
+h1 {
+	margin-top: 10px;
+	text-align: center;
+	font-family: "Raleway", sans-serif;
+}
+.Parrafo {
+	&::first-letter {
+		font-size: $TextoTamanoA;
+		color: black;
+	}
+}
+.imagenOver {
+	transition: transform .2s;
+	:hover {
+		transform: scale(1.5);
+	}
+}
+section {
+	@extend .containerTemplate;
+	width: $porcentaje * 6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	@include paddingDoble(0px, 0px);
+	ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-content: stretch;
+		align-items: flex-start;
+		li {
+			display: inline-block;
+			margin: 30px 10px;
+			a {
+				text-decoration: none;
+				font-size: $TextoTamanoA;
+				@include paddingDoble(10px, 10px);
+				color: cornsilk;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+.parrafo {
+	text-align: justify;
+}
+.imagen {
+	border-radius: 8px;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.subtitulos {
+	margin-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	position: relative;
+	padding: 0;
+	margin: 30px;	
+	font-weight: 300;
+	font-size: $TextoTamanoB;
+	color: #080808;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	line-height: 1.3;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;	
+	color: #080808;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	line-height: 1.3;
+	text-align: center;
+	font-size: $TextoTamanoA;
+	font-weight: 200;
+	color: #222;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-template-rows: 27px 0;
+	grid-gap: 20px;
+	align-items: center;
+}
+.titulo {
+	&:before {
+		width: 28px;
+		height: 5px;
+		display: block;
+		content: "";
+		position: relative;
+		bottom: -76px;
+		left: $porcentaje * 5;
+		top: $porcentaje * 9.7;
+		margin-left: -14px;
+		background-color: $ColorModeRojo;
+	}
+	&:after {
+		width: 100px;
+		height: 1px;
+		display: block;
+		content: "";
+		position: relative;
+		margin-top: 25px;
+		left: $porcentaje *5;
+		margin-left: -50px;
+		background-color: $ColorModeRojo;
+	}
+}
+.subtitulos:after,.subtitulos:before {
+	content: " ";
+	display: block;
+	border-bottom: 1px solid $ColorModeAzul;
+	border-top: 1px solid $ColorModeAzul;
+	height: 5px;
+	background-color: #f8f8f8;
+}
+.gridSucursales {
+	display: grid;
+	grid-template-areas: "Sucursal1 Parrafo1"
+    "Sucursal2 Parrafo2"
+    "Sucursal3 Parrafo3"
+    "Sucursal4 Parrafo4";
+	justify-content: space-evenly;
+	justify-items: center;
+	gap: 20px;
+}
+.liSucursal1 {
+	grid-area: Sucursal1;
+}
+.liSucursal2 {
+	grid-area: Sucursal2;
+}
+.liSucursal3 {
+	grid-area: Sucursal3;
+}
+.liSucursal4 {
+	grid-area: Sucursal4;
+}
+.pSucursal1 {
+	grid-area: Parrafo1;
+}
+.pSucursal2 {
+	grid-area: Parrafo2;
+}
+.pSucursal3 {
+	grid-area: Parrafo3;
+}
+.pSucursal4 {
+	grid-area: Parrafo4;
+}
+.gridImagenes {
+	display: grid;
+	grid-template-areas: "txt txt txt txt"
+    "imgA imgB imgC imgD"
+    "imgE imgF imgG imgH"
+    "imgI imgJ imgK imgL";
+	justify-content: space-evenly;
+	justify-items: center;
+	gap: 20px;
+}
+.gridPrincipal {
+	display: grid;
+	grid-template-areas: "princialNosotros principalSucursales principalMarcas"
+    "princialProducion principalServDom principalContacto";
+	justify-content: space-evenly;
+	justify-items: center;
+	gap: 20px;
+	padding: 0;
+}
+.gridPrincipalBloque1 {
+	grid-area: princialNosotros;
+}
+.gridPrincipalBloque2 {
+	grid-area: principalSucursales;
+}
+.gridPrincipalBloque3 {
+	grid-area: principalMarcas;
+}
+.gridPrincipalBloque4 {
+	grid-area: princialProducion;
+}
+.gridPrincipalBloque5 {
+	grid-area: principalServDom;
+}
+.gridPrincipalBloque6 {
+	grid-area: principalContacto;
+}
+.gridProduccion {
+	display: grid;
+	grid-template-areas: "Bloque1 Bloque1 Bloque1"
+    "Bloque2 Bloque3 Bloque4";
+	justify-content: space-evenly;
+	justify-items: center;
+	gap: 20px;
+}
+.gridProduccionBloque1 {
+	grid-area: Bloque1;
+}
+.gridProduccionBloque2 {
+	grid-area: Bloque2;
+}
+.gridProduccionBloque3 {
+	grid-area: Bloque3;
+}
+.gridProduccionBloque4 {
+	grid-area: "Bloque4";
+}
+.gridServDom {
+	display: grid;
+	grid-template-areas: "BloqueSD1 BloqueSD1"
+    "BloqueSD2 BloqueSD3"
+    "BloqueSD4 BloqueSD5";
+	justify-content: space-evenly;
+	justify-items: center;
+	gap: 20px;
+}
+.gridServDomBloque1 {
+	grid-area: BloqueSD1;
+}
+.gridServDomBloque2 {
+	grid-area: BloqueSD2;
+}
+.gridServDomBloque3 {
+	grid-area: BloqueSD3;
+}
+.gridServDomBloque4 {
+	grid-area: BloqueSD4;
+}
+.gridServDomBloque5 {
+	grid-area: BloqueSD5;
+}
+.card {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #262626;
+	overflow: hidden;
+	.imgBx {
+		top: 0;
+		left: 0;
+		img {
+			width: $porcentaje * 10;
+		}
+	}
+	&:hover {
+		.imgBx {
+			top: 0;
+			left: $porcentaje * -10;
+		}
+		.details {
+			top: 0;
+			left: $porcentaje * 0;
+		}
+	}
+	.details {
+		background: #ffffff;
+		top: 0;
+		left: $porcentaje * 10;
+		@include paddingDoble(60px, 30px);
+		color: #262626;
+		h2 {
+			color: #000;
+			text-align: center;
+			margin: 0;
+			padding: 0 0 10px;
+			border-bottom: 2px solid #000;
+		}
+		p {
+			margin: 20px 0 0;
+			color: #000;
+		}
+	}
+}
+.card .imgBx,
+.card .details {
+	width: $porcentaje *10;
+	height: $porcentaje *10;
+	position: absolute;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+
+
+
+@media  (max-width: 1244px){
+
+    
+    .titulo:before {       
+        display:none;     
+    }
+    .inactive {
+        background-color: $ColorModeAzul;
+        color: $ColorModeVerde ;
+    }
+}
+
+
+@media  (max-width: 990px){    
+   
+    
+    .titulo:before {       
+        display:none;     
+    }
+    .HomeNosotros{
+        display: none;
+    }
+    .HomeSucursales{
+        display: none;
+    }
+    .HomeMarcas{
+        display: none;
+    }
+    .HomeProduccion{
+        display: none;
+    }
+    .HomeServDom{
+        display: none;
+    }
+    .HomeContacto{
+        display: none;
+    }
+    
+    header span{
+        display:inline-block;
+    }
+    
+    .gridImagenes{
+        display:grid;    
+        grid-template-areas:         
+        "imgA imgB"
+        "imgC imgD"
+        "imgE imgF"
+        "imgG imgH"
+        "imgI imgJ"
+        "imgK imgL";
+        justify-content: space-evenly;
+        justify-items: center;
+        gap: 20px;
+        
+    
+    }           
+    .gridProduccion{
+        grid-template-areas: 
+        "Bloque1"
+        "Bloque2"
+        "Bloque3"
+        "Bloque4";
+    }
+
+    .gridServDom{
+        
+        grid-template-areas: 
+        "BloqueSD1"
+        "BloqueSD2"
+        "BloqueSD3"
+        "BloqueSD4"
+        "BloqueSD5";
+        
+    }
+ 
+    
+    .gridPrincipal{
+        
+        grid-template-areas: 
+        "princialNosotros"
+        "principalSucursales"
+        "principalMarcas"
+        "princialProducion"
+        "principalServDom"
+        "principalContacto";
+        
+    }
+
+    
+/*Aquí las CSS para tablet y móvil verticales y móvil horizontal*/
+}
