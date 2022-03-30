@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\ELE GATE\\WEB\\jquery.mycart.master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jquery.mycart.master"
+	}
+}
