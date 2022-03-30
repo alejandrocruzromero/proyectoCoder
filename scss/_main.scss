@@ -310,7 +310,12 @@ section {
 
 
 @media  (max-width: 990px){    
-   
+	.Parrafo {
+		font-size: smaller;
+		text-align: justify;
+		text-justify: inter-word;
+	}	  
+
     
     .titulo:before {       
         display:none;     
@@ -341,12 +346,18 @@ section {
     .gridImagenes{
         display:grid;    
         grid-template-areas:         
-        "imgA imgB"
-        "imgC imgD"
-        "imgE imgF"
-        "imgG imgH"
-        "imgI imgJ"
-        "imgK imgL";
+        "imgA" 
+		"imgB"
+        "imgC" 
+		"imgD"
+        "imgE" 
+		"imgF"
+        "imgG" 
+		"imgH"
+        "imgI" 
+		"imgJ"
+        "imgK" 
+		"imgL";
         justify-content: space-evenly;
         justify-items: center;
         gap: 20px;
@@ -358,7 +369,7 @@ section {
         "Bloque1"
         "Bloque2"
         "Bloque3"
-        "Bloque4";
+        "Bloque4"; 
     }
 
     .gridServDom{
@@ -385,6 +396,22 @@ section {
         
     }
 
-    
+	.gridSucursales {
+		display: grid;
+		grid-template-areas: "Sucursal1"
+		 "Parrafo1"
+		"Sucursal2" 
+		"Parrafo2"
+		"Sucursal3" 
+		"Parrafo3"
+		"Sucursal4" 
+		"Parrafo4";
+		justify-content: space-evenly;
+		justify-items: center;
+		gap: 20px;
+	}
+    .imagen300{
+		width: 300px ;
+	}
 /*Aquí las CSS para tablet y móvil verticales y móvil horizontal*/
 }
